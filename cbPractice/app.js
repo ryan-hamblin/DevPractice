@@ -1,14 +1,14 @@
 var merge = function(array1, array2, callback){  
+  var result = [];
   for (var i = 0; i < array1.length; i++) {
-   return array1[i] + array2[i];
+   result[i] = array1[i] + array2[i];
   };
-  callback(array1[i] + array2[i]);
+  callback(result);
 };
 
-var x = merge([1, 2, 3, 4], [5, 6, 7, 8], function(a, b){  
-  return a + b;
+var x = merge([1, 2, 3, 4], [5, 6, 7, 8], function(merged) {
+    console.log(merged);
 });
-console.log(x);
 
 
 
