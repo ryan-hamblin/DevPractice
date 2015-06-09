@@ -1,5 +1,4 @@
 
-
 //  In this repo your job is to write functions to make each function call work properly.
 // Below is a sample problem 
   var sayHi = function(name, cb){
@@ -111,7 +110,14 @@ contains(names, 'Colt', function(result){
 // /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
 
 
-
+var uniq = function(nameArray, name, cb){
+  var result = name;
+  for (var i = nameArray.length - 1; i >= 0; i--) {
+    if(nameArray[i] === name)
+      nameArray.splice(i, 1);
+  };
+  cb(result);
+};
 
 
 
