@@ -1,15 +1,3 @@
-var merge = function(array1, array2, callback){  
-  var result = [];
-  for (var i = 0; i < array1.length; i++) {
-   result[i] = array1[i] + array2[i];
-  };
-  callback(result);
-};
-
-var x = merge([1, 2, 3, 4], [5, 6, 7, 8], function(merged) {
-    console.log(merged);
-});
-
 
 
 //  In this repo your job is to write functions to make each function call work properly.
@@ -131,10 +119,10 @@ contains(names, 'Colt', function(result){
 
 // };
 
-var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
-uniq(names, function(uniqArr){
-  console.log('The new names array with all the duplicate items removed is ', uniqArr);
-});
+// var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
+// uniq(names, function(uniqArr){
+//   console.log('The new names array with all the duplicate items removed is ', uniqArr);
+// });
 
 
 
