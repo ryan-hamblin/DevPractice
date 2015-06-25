@@ -46,10 +46,6 @@ first(names, function(firstName){
 
 
 
-// var last = function(name, cb){
-// 	cb(name[name.length-1]);
-// }
-
 var last = function(name, cb){
   cb(name[name.length-1]);
 };
